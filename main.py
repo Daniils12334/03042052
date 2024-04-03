@@ -18,10 +18,9 @@ while True:
     print("1. Get miruso_skaits by sequence number")
     print("2. Top 10 places with highest men deaths count")
     print("3. Top 10 places with highest women deaths count")
-    print("4. 52 places with highest death rate comparing to an entered number")
-    print("5. 52 places with lowest death rate comparing to an entered number")
-    print("6. -- Filter of your choice --")
-    print("7. Exit")
+    print("4. 20 places with lowest death rate comparing to an entered number")
+    print("5. 20 places with highest death rate comparing to an entered number")
+    print("6. Exit")
 
     choice = input("Enter your choice (1-6): ")
 
@@ -52,7 +51,7 @@ while True:
         for mirus in miruso:
             if int(mirus[6]) <= target_death_count_male:
                 newlist.append(mirus)
-        print(newlist[:52])
+        print(newlist[:20])
         pass
     elif choice == '5':
 
@@ -64,14 +63,12 @@ while True:
         print(newlist[:20])
         pass
 
+
+
     elif choice == '6':
-    
-        pass
-    elif choice == '7':
         print("Exiting")
         break
     else:
-        print("Invalid choice, choose from 1 to 7")
+        print("Invalid choice, choose from 1 to 6")
 
-    print("==========================")
 
